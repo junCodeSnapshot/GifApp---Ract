@@ -1,13 +1,18 @@
+:root{
+  --primary: hsl(248, 10%, 30%);
+  --secondary: hsl(240, 100%, 71%)
+}
+
+
 * {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
   padding: 60px;
-  background-color: gold;
+  background-color: white;
 }
 input{
-  color: greenyellow;
-  background-color: orangered;
+  color: var(--primary);
   font-size: 1.2rem;
   width: 100%;
 }
@@ -28,8 +33,9 @@ input{
 }
 
 .card img{
-  max-height: 500px;
-  max-width: 400px;
+  height: 200px;
+  width: 300px;
+  image-rendering: crisp-edges;
 }
 
 .card-grid{
@@ -38,10 +44,16 @@ input{
   flex-wrap: wrap;
 }
 h2{
-  color:red;
+  color: var(--secondary);
   font-size: 8.2rem;
-  /* border:2px solid black; */
+  text-align: center;
 }
 .animate__animated.animate__fadeIn{
   --animate-duration: 3.5s;
+}
+.card-display{
+  margin: auto;
+}
+h3{
+  color: var(--secondary);
 }
